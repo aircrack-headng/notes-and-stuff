@@ -1,0 +1,20 @@
+Type	  Precision	        Mutable?	   Notes
+int	    Arbitrary	        Immutable	   No fixed bit-width; grows to accommodate any integer.
+float	  64-bit IEEE-754	  Immutable	   Binary floating point; rounding error is common.
+complex	Two 64-bit floats	Immutable	   3+4j form; handy for FFTs but rarely used in security code.
+bool	  Subclass of int	  Immutable	   True == 1, False == 0.
+
+1)INT,notes:underscores improve readability of numbers
+KEY POINTS:unlimited size lets cr. maths be done withount third party int libraries
+CONVERTING TO BYTES IS ESSENTIAL IN EXPLOIT PAYLOADS
+done by using 
+print(n.bit_length())     
+print(hex(n))              
+print(n.to_bytes(4, 'big'))  
+
+2)FLOAT 
+Why it matters: timing attacks and packet timestamping often rely on precise arithmetic.
+Use the decimal module when you need exact base-10 decimals, or compare floats within tolerances
+as due example:
+from math import isclose
+isclose(0.1 + 0.2, 0.3, rel_tol=1e-09)
