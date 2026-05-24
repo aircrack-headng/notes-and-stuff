@@ -18,3 +18,21 @@ Use the decimal module when you need exact base-10 decimals, or compare floats w
 as due example:
 from math import isclose
 isclose(0.1 + 0.2, 0.3, rel_tol=1e-09)
+
+3)STR
+Since Python 3, str stores Unicode code points, 
+not raw bytes. When you receive network data as example:
+raw = sock.recv(1024)       
+text = raw.decode('utf-8', errors='replace')
+notes:instead of +(creates inanimate objects) use:
+"".join(parts) OR io.stringIO FOR large loops
+INDEXING/SLICING
+s = "pwned"
+
+
+
+
+
+
+
+
