@@ -28,6 +28,27 @@ notes:instead of +(creates inanimate objects) use:
 "".join(parts) OR io.stringIO FOR large loops
 INDEXING/SLICING
 s = "pwned"
+s[0] 
+s[-1]
+s[1:4]
+COMMON OPERATIONS:
+s.startswith("pw")
+s.find("ne")
+s.replace("pwn", "own")
+STRING FORMATTING
+Style	         Example	       Remarks
+f-strings      f"{ip}:{port}"	 Fast, readable, type-safe
+str.format	   "{}:{}"	       Good for dynamic field widths
+percent	       "%s:%d"         Historic; still seen in CTF code
+
+1.2.3 Byte-Oriented Types
+Type	        Mutable?	    Purpose
+bytes         No	          Immutable sequence of integers 0-255.
+bytearray	    Yes	          In-place edits (e.g. patching shellcode).
+memoryview	  N/A	          Zero-copy slice into another bytes-like object.
+
+
+
 
 
 
