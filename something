@@ -1,0 +1,13 @@
+pentesting course notes 1.
+1.enumeration
+
+2.recon
+
+first step wordpress website:
+1.WPSCAN(cu account)
+
+ALWAYS USE -pn for NMAP windows
+
+TTL(time to leave) de la pachete de ARP sunt folosite pentru a afla build la WIN
+Apache probably leads to PHP website 
+merkelemap/crt.sh use them!!No bruteforce needed
