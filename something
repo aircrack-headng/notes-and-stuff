@@ -11,3 +11,19 @@ ALWAYS USE -pn for NMAP windows
 TTL(time to leave) de la pachete de ARP sunt folosite pentru a afla build la WIN
 Apache probably leads to PHP website 
 merkelemap/crt.sh use them!!No bruteforce needed
+
+CYBERPEOBLEMS GUIDE TO PWN HELLO HELLO
+docker files edition
+ldd for file info
+docker build -t *chall name* .
+docker run -v $(pwd)/shared:/shared -p *porturi la misto* *chall name*
+docker ps for docker info
+note:in my case now its c4cd05cef02f 
+docker exec -it *docker id* /bin/bash
+copy the libc and lib location and put it in shared(again,ldd)
+cp *location* (sudo it.)
+UPDATE it wasnt a dockerfile ctf WE BALL EVEN MORE NOW.
+its there,check
+sudo mv ./shared/* .
+pwninit
+and then GOOD LUCK WRITING BUDDY
