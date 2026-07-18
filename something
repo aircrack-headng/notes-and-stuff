@@ -27,3 +27,4 @@ its there,check
 sudo mv ./shared/* .
 pwninit
 and then GOOD LUCK WRITING BUDDY
+when multiple libcs 
